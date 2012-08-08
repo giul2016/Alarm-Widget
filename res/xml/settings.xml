@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/prefs_default">
+		<CheckBoxPreference
+			android:key="useDefaultColors"
+			android:defaultValue="false"
+			android:title="@string/useDefaultColors" />
+	</PreferenceCategory>
+	<PreferenceCategory 
+		android:key="colorsPrefs"
+		android:title="@string/prefs_color">
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:key="colorHour"
+			android:title="@string/colorHour_title" 
+			android:summary="@string/colorHour_summary"
+			android:defaultValue="@integer/COLOR_DEFAULT" 
+			alphaSlider="true" 
+		/>
+		<net.margaritov.preference.colorpicker.ColorPickerPreference 
+			android:key="colorDay"
+			android:title="@string/colorDay_title" 
+			android:summary="@string/colorDay_summary"
+			android:defaultValue="@integer/COLOR_DEFAULT" 
+			alphaSlider="true" 
+		/>
+	</PreferenceCategory>
+	<Preference
+		android:title=""
+		android:selectable="false" />
+	<PreferenceCategory
+		android:title="@string/addWidget">
+		<Preference
+			android:key="add_widget"
+			android:title="@string/addWidget"
+			android:selectable="true"
+		/>
+	</PreferenceCategory>
+</PreferenceScreen>

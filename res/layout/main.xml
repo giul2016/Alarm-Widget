@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alarmWidget"
+    android:orientation="vertical"
+    android:layout_width="136dip"
+    android:layout_height="65dip"
+    android:layout_gravity="center"
+    android:background="@drawable/background" >
+    <ImageView 
+    	android:id="@+id/alarm_image"
+    	android:layout_width="40dip"
+    	android:layout_height="40dip"
+    	android:src="@drawable/icon"
+    	android:layout_marginLeft="-4dip"
+    	android:layout_centerVertical="true" />
+    	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/hourDayLayout"
+	    android:layout_width="fill_parent"
+	    android:gravity="center"
+	    android:orientation="vertical"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="2dip" >
+		
+		<TextView  
+			android:id="@+id/hour"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+	    	android:layout_marginTop="6dip"
+	    	android:layout_marginLeft="4dip"
+		    android:textSize="30dip"
+		    android:textColor="@color/color_default" />
+		<TextView  
+			android:id="@+id/day"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/loading"
+		    android:textSize="10dip"
+		    android:layout_marginTop="-3dip"
+		    android:textColor="@color/color_default" />
+	</LinearLayout>
+	
+	<RelativeLayout 
+		    android:id="@+id/updateLayout"
+		    android:orientation="horizontal"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentBottom="true"
+		    android:layout_width="50dip"
+		    android:layout_height="60dip" >
+			<ImageView 
+			    android:id="@+id/update"
+			    android:layout_width="20dip"
+			    android:layout_height="20dip"
+			    android:src="@drawable/update"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentBottom="true"
+			    android:layout_marginBottom="4dip"
+			    android:layout_marginRight="13dip" />
+	</RelativeLayout>
+
+</RelativeLayout>

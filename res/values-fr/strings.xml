@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loading">Chargement...</string>
+    <string name="dontBeLazy">Lazy!</string>
+    <string name="tomorrow">Demain</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="updated">Alarme à jour!</string>
+    <string name="addWidget">Ajouter AlarmWidget</string>
+    
+    <string-array name="daysFormatted">
+        <item>lun.</item>
+        <item>mar.</item>
+        <item>mer.</item>
+        <item>jeu.</item>
+        <item>ven.</item>
+        <item>sam.</item>
+        <item>dim.</item>
+    </string-array>
+    
+    <string-array name="days">
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Mercredi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+        <item>Samedi</item>
+        <item>Dimanche</item>
+    </string-array>
+ 
+    <string name="withoutDay">Réveiller!</string>
+       
+    <string name="prefs_title">Fixé AlarmWidget</string>
+    <string name="prefs_color">Couleurs</string>
+    <string name="prefs_default">Couleur par défaut</string>
+    <string name="useDefaultColors">Couleurs par défaut</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Choisissez une couleur</string>
+    <string name="press_color_to_apply">Cliquez sur la couleur à utiliser</string>    
+    
+    <!-- Preferences -->
+    <string name="colorHour_title">Couleur de l\'heure</string>
+    <string name="colorHour_summary">Choisissez la couleur de l\'heure</string>
+    <string name="colorDay_title">Couleur de la journée</string>
+    <string name="colorDay_summary">Choisissez la couleur de la journée</string>
+
+</resources>

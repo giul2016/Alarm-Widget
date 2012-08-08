@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AlarmWidget</string>
+    <string name="loading">Loading...</string>
+    <string name="sleeping">zZz</string>
+    <string name="dontBeLazy">Don\'t be lazy!</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="today">Today</string>
+    <string name="updated">Alarm updated!</string>
+    <string name="addWidget">Add AlarmWidget</string>
+    
+    <string-array name="daysFormatted">
+        <item>Mo</item>
+        <item>Tu</item>
+        <item>We</item>
+        <item>Th</item>
+        <item>Fr</item>
+        <item>Sa</item>
+        <item>Su</item>
+    </string-array>
+    
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    
+    <string name="withoutDay">¡Wake up!</string>
+        
+    <string name="prefs_title">Customize AlarmWidget</string>
+    <string name="prefs_color">Colors</string>
+    <string name="prefs_default">Default colors</string>
+    <string name="useDefaultColors">Use default colors</string>
+        <!-- Color Picker -->
+    <string name="dialog_color_picker">Pick a color</string>
+    <string name="press_color_to_apply">Press color to apply</string>    
+    
+    <!-- Preferences -->
+    <string name="colorHour_title">Hour color</string>
+    <string name="colorHour_summary">Choose a color for the hour</string>
+    <string name="colorDay_title">Day color</string>
+    <string name="colorDay_summary">Choose a color for the day</string>
+
+	<string name="crash_toast_text">AlarmWidget crashed! Don\'t worry, a report has been sent to the developer to help fix me!</string>
+</resources>
