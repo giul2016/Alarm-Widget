@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="loading">Cargando...</string>
+    <string name="sleeping">zZz</string>
     <string name="dontBeLazy">¡No seas vago!</string>
     <string name="tomorrow">Mañana</string>
     <string name="today">Hoy</string>
@@ -8,13 +9,13 @@
     <string name="addWidget">Añadir AlarmWidget</string>
     
     <string-array name="daysFormatted">
-        <item>lun.</item>
-        <item>mar.</item>
-        <item>mié.</item>
-        <item>jue.</item>
-        <item>vie.</item>
-        <item>sáb.</item>
-        <item>dom.</item>
+        <item>lun</item>
+        <item>mar</item>
+        <item>mié</item>
+        <item>jue</item>
+        <item>vie</item>
+        <item>sáb</item>
+        <item>dom</item>
     </string-array>
     
     <string-array name="days">
@@ -29,7 +30,7 @@
     
     <string name="withoutDay">¡Despierta!</string>
     
-    <string name="prefs_title">Configurar AlarmWidget</string>
+    <string name="prefs_title">Configurar Alarm Widget (Free)</string>
     <string name="prefs_color">Colores</string>
     <string name="prefs_default">Colores por defecto</string>
     <string name="useDefaultColors">Usar colores por defecto</string>
@@ -44,6 +45,6 @@
     <string name="colorDay_title">Color de día</string>
     <string name="colorDay_summary">Escoge el color del día</string>
 
-	<string name="crash_toast_text">¡AlarmWidget se ha interrumpido! No te preocupes, un informe se ha enviado a mi programador para que no vuelva a ocurrirme!</string>
+	<string name="crash_toast_text">¡Alarm Widget (Free) se ha interrumpido! No te preocupes, un informe se ha enviado a mi programador para que no vuelva a ocurrirme!</string>
 
 </resources>

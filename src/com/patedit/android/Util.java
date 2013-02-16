@@ -3,6 +3,9 @@ package com.patedit.android;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
+import org.acra.ErrorReporter;
+
 import android.content.Context;
 import android.provider.Settings;
 
@@ -47,6 +50,10 @@ public class Util {
 				} else {
 					day = days[i];
 				}
+			} else {
+				String dayNotFoundMsg = "Day not found (" + day + ")";
+				Throwable dayNotFound = new Throwable(dayNotFoundMsg);
+				ErrorReporter.getInstance().handleSilentException(dayNotFound);
 			}
 		}
 

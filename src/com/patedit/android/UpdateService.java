@@ -5,6 +5,8 @@ import java.util.regex.Pattern;
 
 import org.acra.ErrorReporter;
 
+import com.patedit.android.R;
+
 import android.app.IntentService;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -17,6 +19,8 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
+import android.util.Log;
+import android.view.View;
 import android.widget.RemoteViews;
 
 public class UpdateService extends IntentService {
@@ -31,22 +35,32 @@ public class UpdateService extends IntentService {
 	private static String classAlarm;
 
 	private static String clockImpls[][] = {
-			{ "HTC Alarm Clock", "com.htc.android.worldclock",
-					"com.htc.android.worldclock.WorldClockTabControl" },
-			{ "Standar Alarm Clock", "com.android.deskclock",
-					"com.android.deskclock.AlarmClock" },
-			{ "Samsung Galaxy Nexus", "com.google.android.deskclock",
-					"com.android.deskclock.AlarmClock" },
-			{ "Moto Blur Alarm Clock", "com.motorola.blur.alarmclock",
-					"com.motorola.blur.alarmclock.AlarmClock" },
-			{ "Samsung Galaxy Clock", "com.sec.android.app.clockpackage",
-					"com.sec.android.app.clockpackage.ClockPackage" },
-			{ "Sony Ericsson", "com.sonyericsson.alarm",
-					"com.sonyericsson.alarm.Alarm" },
-			{ "Standar Alarm Clock Froyo", "com.android.alarmclock",
-					"com.android.alarmclock.AlarmClock" },
-			{ "Froyo Nexus Alarm Clock", "com.google.android.deskclock",
-					"com.android.deskclock.DeskClock" } };
+		{ "HTC Alarm Clock", "com.htc.android.worldclock",
+				"com.htc.android.worldclock.WorldClockTabControl" },
+		{ "LG Alarm Clock", "com.lge.clock",
+				"com.lge.clock.AlarmClockActivity" },
+		{ "Standar Alarm Clock", "com.android.deskclock",
+				"com.android.deskclock.AlarmClock" },
+		{ "Samsung Galaxy Nexus", "com.google.android.deskclock",
+				"com.android.deskclock.AlarmClock" },
+		{ "Moto Blur Alarm Clock", "com.motorola.blur.alarmclock",
+				"com.motorola.blur.alarmclock.AlarmClock" },
+		{ "Samsung Galaxy Clock", "com.sec.android.app.clockpackage",
+				"com.sec.android.app.clockpackage.ClockPackage" },
+		{ "Sony Ericsson", "com.sonyericsson.alarm",
+				"com.sonyericsson.alarm.Alarm" },
+		{ "Sony Ericsson Clock", "com.sonyericsson.alarm",
+				"com.sonyericsson.alarm.AlarmClock" },
+		{ "Sony Ericsson New", "com.sonyericsson.organizer",
+				"com.sonyericsson.organizer.deskclock.DeskClock" },
+		{ "Sony Ericsson ICS", "com.sonyericsson.organizer",
+				"com.sonyericsson.organizer.icsdeskclock.ICSDeskClock" },
+		{ "Standar Alarm Clock Froyo", "com.android.alarmclock",
+				"com.android.alarmclock.AlarmClock" },
+		{ "ZTE", "zte.com.cn.alarmclock",
+				"zte.com.cn.alarmclock.AlarmClock" },
+		{ "Froyo Nexus Alarm Clock", "com.google.android.deskclock",
+				"com.android.deskclock.DeskClock" } };
 
 	public UpdateService() {
 		super("AlarmWidget");
@@ -86,6 +100,7 @@ public class UpdateService extends IntentService {
 				R.integer.COLOR_DEFAULT);
 
 		remoteViews.setTextColor(R.id.hour, colorHour);
+		
 		remoteViews.setTextColor(R.id.day, colorDay);
 
 		remoteViews.setTextViewText(R.id.hour, hour);
@@ -143,25 +158,31 @@ public class UpdateService extends IntentService {
 		remoteViews.setImageViewResource(R.id.alarm_image, R.drawable.icon);
 		nextAlarm = Settings.System.getString(this.getContentResolver(),
 				Settings.System.NEXT_ALARM_FORMATTED);
-
 		Pattern hourPattern = Pattern.compile("([01]?[0-9]|2[0-3]):[0-5][0-9]");
-		Pattern dayPatternEs = Pattern.compile("[A-Za-z\u00e1\u00e9]{3}[.]");
-		Pattern dayPatternEn = Pattern.compile("[A-Za-z]{2}");
+		Pattern dayPatternEs = Pattern.compile("^[A-Za-z\u00e1]{2}");
+		Pattern dayPatternEn = Pattern.compile("^[A-Za-z]{2}");
+		Pattern dayPatternRu = Pattern.compile("^[\u0410-\u044f]{2}");
+		Pattern ampmPattern = Pattern.compile("(AM|PM|am|pm)$");
 		Matcher hourMatcher = hourPattern.matcher(nextAlarm);
 		Matcher dayMatcherEs = dayPatternEs.matcher(nextAlarm);
 		Matcher dayMatcherEn = dayPatternEn.matcher(nextAlarm);
+		Matcher dayMatcherRu = dayPatternRu.matcher(nextAlarm);
+	
 
 		if (hourMatcher.find()) {
 			hour = hourMatcher.group();
 		}
 
-		if (dayMatcherEs.find()) {
-			day = util.dayFormattedToDay(dayMatcherEs.group(), hour);
-		} else if (dayMatcherEn.find()) {
+		if (dayMatcherEn.find()) {
 			day = util.dayFormattedToDay(dayMatcherEn.group(), hour);
+		} else if (dayMatcherRu.find()) {
+			day = util.dayFormattedToDay(dayMatcherRu.group(), hour);
+		} else if (dayMatcherEs.find()) {
+			day = util.dayFormattedToDay(dayMatcherEs.group(), hour);
 		} else {
 			day = this.getString(R.string.withoutDay);
 		}
+		
 	}
 
 	private void dontLoadAlarm() {

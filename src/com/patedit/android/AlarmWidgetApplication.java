@@ -15,5 +15,4 @@ public class AlarmWidgetApplication extends Application {
         ACRA.init(this);
         super.onCreate();
     }
-
 }

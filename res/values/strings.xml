@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AlarmWidget</string>
+    <string name="app_name">Alarm Widget (Free)</string>
     <string name="loading">Loading...</string>
     <string name="sleeping">zZz</string>
     <string name="dontBeLazy">Don\'t be lazy!</string>
     <string name="tomorrow">Tomorrow</string>
     <string name="today">Today</string>
     <string name="updated">Alarm updated!</string>
-    <string name="addWidget">Add AlarmWidget</string>
+    <string name="addWidget">Add Widget</string>
     
     <string-array name="daysFormatted">
         <item>Mo</item>
@@ -29,9 +29,9 @@
         <item>Sunday</item>
     </string-array>
     
-    <string name="withoutDay">¡Wake up!</string>
+    <string name="withoutDay">Wake up!</string>
         
-    <string name="prefs_title">Customize AlarmWidget</string>
+    <string name="prefs_title">Customize Alarm Widget (Free)</string>
     <string name="prefs_color">Colors</string>
     <string name="prefs_default">Default colors</string>
     <string name="useDefaultColors">Use default colors</string>
@@ -45,5 +45,5 @@
     <string name="colorDay_title">Day color</string>
     <string name="colorDay_summary">Choose a color for the day</string>
 
-	<string name="crash_toast_text">AlarmWidget crashed! Don\'t worry, a report has been sent to the developer to help fix me!</string>
+	<string name="crash_toast_text">Alarm Widget (Free) crashed! Don\'t worry, a report has been sent to the developer to help fix me!</string>
 </resources>

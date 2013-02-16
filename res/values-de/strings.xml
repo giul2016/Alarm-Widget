@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="loading">Laden...</string>
+    <string name="sleeping">zZz</string>
     <string name="dontBeLazy">Faule!</string>
     <string name="tomorrow">Morgen</string>
     <string name="today">Heute</string>
     <string name="updated">Alarm aktualisiert!</string>
-    <string name="addWidget">Hinzufügen AlarmWidget</string>
+    <string name="addWidget">Hinzufügen Widget</string>
     
     <string-array name="daysFormatted">
-        <item>Mo.</item>
-        <item>Di.</item>
-        <item>Mi.</item>
-        <item>Do.</item>
-        <item>Fr.</item>
-        <item>Sa.</item>
-        <item>So.</item>
+        <item>Mo</item>
+        <item>Di</item>
+        <item>Mi</item>
+        <item>Do</item>
+        <item>Fr</item>
+        <item>Sa</item>
+        <item>So</item>
     </string-array>
     
     <string-array name="days">
@@ -29,7 +30,7 @@
  
     <string name="withoutDay">Aufwachen!</string>
        
-    <string name="prefs_title">Setzen AlarmWidget</string>
+    <string name="prefs_title">Setzen Alarm Widget (Free)</string>
     <string name="prefs_color">Farben</string>
     <string name="prefs_default">Standardfarbe</string>
     <string name="useDefaultColors">Standard-Farben</string>
@@ -43,5 +44,7 @@
     <string name="colorHour_summary">Wählen Sie die Farbe der Stunde</string>
     <string name="colorDay_title">Farbe des Tages</string>
     <string name="colorDay_summary">Wählen Sie die Farbe des Tages</string>
+    
+	<string name="crash_toast_text">Alarm Widget (Free) abgestürzt! Mach dir keine Sorgen, hat einen Bericht an die Entwickler geschickt worden, um mich fix!</string>
 
 </resources>

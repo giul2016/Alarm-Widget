@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources> 
 	<string name="loading">Caricamento..</string>
+    <string name="sleeping">zZz</string>
 	<string name="dontBeLazy">¡Pigro!</string> 
 	<string name="tomorrow">Domani</string> 
 	<string name="today">Oggi</string> 
 	<string name="updated">¡Alarme aggiornato!</string> 
-	<string name="addWidget">Aggiungere AlarmWidget</string> 
+	<string name="addWidget">Aggiungere Widget</string> 
 
 	<string-array name="daysFormatted"> 
 		<item>lu</item> 
@@ -29,7 +30,7 @@
 
     <string name="withoutDay">¡Risvegliare!</string>
     
-	<string name="prefs_title">Configurare AlarmWidget</string> 
+	<string name="prefs_title">Configurare Alarm Widget (Free)</string> 
 	<string name="prefs_color">Colores</string> 
 	<string name="prefs_default">Colori per defetto</string> 
 	<string name="useDefaultColors">Usare colori predefiniti</string> 
@@ -44,5 +45,7 @@
 	 <string name="colorDay_title">Colore di giorno</string> 
 	 <string name="colorDay_summary">Scegliere un colore di giorno</string> 
 
+	 <string name="crash_toast_text">Alarm Widget (Free) si è schiantato! Non ti preoccupare, un rapporto è stato inviato allo sviluppatore di fissare me!</string>
+	 
 </resources>
 

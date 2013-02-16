@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loading">Загрузка...</string>
+    <string name="sleeping">zZz</string>
+    <string name="dontBeLazy">Не ленитесь!</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="today">Сегодня</string>
+    <string name="updated">Обновлен сигнализации!</string>
+    <string name="addWidget">Добавить виджет</string>
+    
+    <string-array name="daysFormatted">
+        <item>пн</item>
+        <item>вт</item>
+        <item>ср</item>
+        <item>чт</item>
+        <item>пт</item>
+        <item>сб</item>
+        <item>вс</item>
+    </string-array>
+    
+    <string-array name="days">
+        <item>понедельник</item>
+        <item>вторник</item>
+        <item>среда</item>
+        <item>четверг</item>
+        <item>пятница</item>
+        <item>суббота</item>
+        <item>воскресенье</item>
+    </string-array>
+    
+    <string name="withoutDay">Проснитесь!</string>
+    
+    <string name="prefs_title">Настроить Alarm Widget (Pro)</string>
+    <string name="prefs_color">Цвета</string>
+    <string name="prefs_default">настройки</string>
+    <string name="useDefaultColors">Используйте цвета по умолчанию</string>
+    <string name="useDefaultColors_summary">Цвета по умолчанию будет использоваться</string>
+    <string name="dontUseBorder">Без граница</string>
+    <string name="dontUseBorder_summary">Нет граница будет показано</string>
+    <string name="useSameColorDayHour">В тот же день цвете / час</string>
+    <string name="useSameColorDayHour_summary">День и час, будет иметь тот же цвет</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Выберите цвет</string>
+    <string name="press_color_to_apply">Нажмите цвет, чтобы использовать его</string>    
+    
+    <!-- Preferences -->
+    <string name="colorBackground_title">цвет фона</string>
+    <string name="colorBackground_summary">Выберите цвет для фона</string>
+    <string name="colorBorder_title">выделяющий цвет</string>
+    <string name="colorBorder_summary">Выберите цвет для линии границы</string>
+    
+    <string name="colorHour_title">час цвета</string>
+    <string name="colorHour_summary">Выберите цвет для часов</string>
+    <string name="colorDay_title">День цветов</string>
+    <string name="colorDay_summary">Выберите цвет в течение дня</string>
+
+	<string name="crash_toast_text">Alarm Widget (Pro) разбившийся!</string>
+
+</resources>
