@@ -1,3 +1,26 @@
+<<<<<<< HEAD
 bin
 .metadata
 .settings
+=======
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+>>>>>>> d88c11a258a8b051cce6d9b0377ebe08e0ee1e7c
