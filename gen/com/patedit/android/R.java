@@ -61,10 +61,14 @@ public final class R {
  Preferences 
  Preferences 
  Preferences 
+ Preferences 
+ Preferences 
          */
         public static final int colorHour_title=0x7f07000f;
         public static final int crash_toast_text=0x7f070013;
         /**  Color Picker 
+ Color Picker 
+ Color Picker 
  Color Picker 
  Color Picker 
  Color Picker 

@@ -162,7 +162,6 @@ public class UpdateService extends IntentService {
 		Pattern dayPatternEs = Pattern.compile("^[A-Za-z\u00e1]{2}");
 		Pattern dayPatternEn = Pattern.compile("^[A-Za-z]{2}");
 		Pattern dayPatternRu = Pattern.compile("^[\u0410-\u044f]{2}");
-		Pattern ampmPattern = Pattern.compile("(AM|PM|am|pm)$");
 		Matcher hourMatcher = hourPattern.matcher(nextAlarm);
 		Matcher dayMatcherEs = dayPatternEs.matcher(nextAlarm);
 		Matcher dayMatcherEn = dayPatternEn.matcher(nextAlarm);

@@ -50,10 +50,6 @@ public class Util {
 				} else {
 					day = days[i];
 				}
-			} else {
-				String dayNotFoundMsg = "Day not found (" + day + ")";
-				Throwable dayNotFound = new Throwable(dayNotFoundMsg);
-				ErrorReporter.getInstance().handleSilentException(dayNotFound);
 			}
 		}
 

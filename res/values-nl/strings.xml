@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alarm Widget (Free)</string>
+    <string name="loading">Laden...</string>
+    <string name="sleeping">zZz</string>
+    <string name="dontBeLazy">Niet zo lui!</string>
+    <string name="tomorrow">Morgen</string>
+    <string name="today">Vandaag</string>
+    <string name="updated">Bijgewerkt alarm!</string>
+    <string name="addWidget">Widget toevoegen</string>
+  
+    
+    <string-array name="days">
+        <item>maandag</item>
+        <item>dinsdag</item>
+        <item>woensdag</item>
+        <item>donderdag</item>
+        <item>vrijdag</item>
+        <item>zaterdag</item>
+        <item>zondag</item>
+    </string-array>
+    
+    <string-array name="daysFormatted">
+        <item>ma</item>
+        <item>di</item>
+        <item>wo</item>
+        <item>do</item>
+        <item>vr</item>
+        <item>za</item>
+        <item>zo</item>
+    </string-array>
+    
+    
+    <string name="withoutDay">Wakker worden!</string>
+        
+    <string name="prefs_title">Alarm Widget (Free) aanpassen</string>
+    <string name="prefs_color">Kleuren</string>
+    <string name="prefs_default">Instellingen</string>
+    <string name="useDefaultColors">Gebruik standaardkleuren</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Kies een kleur</string>
+    <string name="press_color_to_apply">Druk op een kleur om deze te gebruiken</string>    
+    
+    <!-- Preferences -->
+    <string name="colorHour_title">Kleur uur</string>
+    <string name="colorHour_summary">Kies een kleur voor het uur</string>
+    <string name="colorDay_title">Kleur dag</string>
+    <string name="colorDay_summary">Kies een kleur voor de dag</string>
+
+	<string name="crash_toast_text">Alarm Widget (Free) is gecrashed! Geen zorgen, er is een rapport naar de ontwikkelaar gestuurd te helpen mij te repareren!</string>
+</resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources> 
+    <string name="app_name">Alarm Widget (Free)</string>
 	<string name="loading">Caricamento..</string>
     <string name="sleeping">zZz</string>
 	<string name="dontBeLazy">¡Pigro!</string> 

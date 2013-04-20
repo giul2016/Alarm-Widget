@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alarm Widget (Free)</string>
+    <string name="loading">Ładowanie...</string>
+    <string name="sleeping">zZz</string>
+    <string name="dontBeLazy">Nie bądź leniem!</string>
+    <string name="tomorrow">Jutro</string>
+    <string name="today">Dziś</string>
+    <string name="updated">Aktualizacja alarm!</string>
+    <string name="addWidget">Dodaj Widget</string>
+    
+    <string-array name="daysFormatted">
+        <item>Po</item>
+        <item>Wt</item>
+        <item>Śr</item>
+        <item>Cz</item>
+        <item>Pi</item>
+        <item>So</item>
+        <item>Ni</item>
+    </string-array>
+    
+    <string-array name="days">
+        <item>Poniedziałek</item>
+        <item>Wtorek</item>
+        <item>Środa</item>
+        <item>Czwartek</item>
+        <item>Piątek</item>
+        <item>Sobota</item>
+        <item>Niedziela</item>
+    </string-array>
+    
+    <string name="withoutDay">Obudzić się!</string>
+        
+    <string name="prefs_title">Dostosuj Alarm Widget (Free)</string>
+    <string name="prefs_color">Kolory</string>
+    <string name="prefs_default">Ustawienia</string>
+    <string name="useDefaultColors">Użyj domyślnych kolorów</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Wybierz kolor</string>
+    <string name="press_color_to_apply">Wybierz kolor aby go zastosować</string>    
+    
+    <!-- Preferences -->
+    <string name="colorHour_title">Kolor godziny godziny</string>
+    <string name="colorHour_summary">Wybierz kolor</string>
+    <string name="colorDay_title">Kolor dni</string>
+    <string name="colorDay_summary">wybierz kolor dni</string>
+
+	<string name="crash_toast_text">Aplikacja Alarm Widget (Free) została zatrzymana! Nie przejmuj się. Raport o tym zostanie wysłany, abym mógł to naprawić!</string>
+</resources>
